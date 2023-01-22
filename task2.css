@@ -1,0 +1,85 @@
+* {
+  font-family: monospace;
+  margin: 0;
+}
+
+.home {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+}
+.navbar {
+  position: relative;
+  top: initial;
+  background-color: transparent;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  /* background-color: aqua; */
+  display: inline;
+  height: 20%;
+  width: 20%;
+}
+
+.menuDiv {
+  display: inline-flex;
+  /* padding: 15px; */
+}
+
+.check_box:checked ~ .elements a {
+  box-shadow: 0 0 0 2px pink;
+  color: aqua;
+}
+
+.elements a:hover {
+  background-color: rgb(201, 199, 199);
+  border-bottom: 3px solid black;
+  cursor: pointer;
+}
+.elements {
+  visibility: visible;
+}
+
+@media screen and (max-width: 480px) {
+  .check_box {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    display: block;
+  }
+
+  .elements a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .check_box {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    display: none;
+  }
+
+  .elements {
+    display: inline;
+  }
+
+  .elements a {
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+/* Labels for checked inputs */
