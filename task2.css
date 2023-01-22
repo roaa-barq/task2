@@ -29,9 +29,8 @@
   /* padding: 15px; */
 }
 
-.check_box:checked ~ .elements a {
-  box-shadow: 0 0 0 2px pink;
-  color: aqua;
+.check_box:checked ~ .elements {
+  display: block;
 }
 
 .elements a:hover {
@@ -51,6 +50,10 @@
     display: block;
   }
 
+  .elements {
+    display: none;
+  }
+
   .elements a {
     display: block;
     color: black;
@@ -58,7 +61,6 @@
     padding: 15px;
     text-decoration: none;
     font-size: 20px;
-    visibility: hidden;
   }
 }
 
